@@ -81,7 +81,7 @@ header nav ul li a {
 }
 
 footer {
-    background-color: #09485f;
+    background-color: #09485fda;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -120,8 +120,68 @@ body::before {
 .item img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease, transition-delay 0.3s; /* Adiciona transição de suavização ao tamanho com atraso */
 }
 
 .item h3 {
     margin-top: 10px;
 }
+
+/* Ícone Flutuante do WhatsApp */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease; /* Adiciona transição suave para a sombra */
+}
+
+.whatsapp-icon:hover img {
+    box-shadow: 0 0 20px #00f; /* Adiciona sombra azul ao redor do ícone */
+}
+
+/* Efeito de aumento suave nas imagens dos itens */
+.item img:hover {
+    transform: scale(1.5); /* Aumenta o tamanho em 10% */
+    transition-delay: 0.1s; /* Adiciona atraso de 0.3s para a transição */
+}
+
+/* Divisão para a imagem */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura da imagem */
+    overflow: hidden;
+    display: flex;
+}
+
+.image-container img {
+    width: 50%; /* Metade da largura da tela */
+    height: 100%; /* Mesma altura da imagem */
+    object-fit: cover;
+    filter: blur(2.2px);
+    z-index: 1; /* Garante que a imagem esteja sobreposta ao quadrado */
+    transition: filter 0.05s ease, transform 0.5s ease; /* Adiciona transições suaves */
+}
+
+/* Quadrado azul escuro */
+.blue-square {
+    width: 50%; /* Metade da largura da tela */
+    height: 400px; /* Mesma altura da imagem */
+    background-color: #214e73; /* Cor azul escuro */
+    z-index: 0; /* Coloca o quadrado atrás da imagem */
+}
+
+/* Remover embaçamento e aumentar tamanho da imagem quando o mouse estiver sobre ela */
+/* .image-container:hover img {
+    filter: none;
+    transform: scale(1.2);
+} */
+
+/* CSS posterior permanece inalterado */
