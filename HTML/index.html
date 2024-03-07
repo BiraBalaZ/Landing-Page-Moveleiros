@@ -5,6 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moveleiros - Landing Page</title>
     <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        /* CSS anterior permanece inalterado */
+        
+        /* Quadrado azul escuro */
+        .blue-square {
+            width: 50%; /* Metade da largura da tela */
+            height: 400px; /* Mesma altura da imagem */
+            background-color: #214e73; /* Cor azul escuro */
+            z-index: 0; /* Coloca o quadrado atrás da imagem */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: relative; /* Permite posicionar o conteúdo interno */
+        }
+
+        /* Estilo para o formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding: 15px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+            height: 220px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0066CC;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .image-text {
+            font-size: 135%;
+            position: absolute;
+            text-align: center;
+            color: #275166; /* Assuming you want white text */
+            z-index: 1;
+            width: 900px;
+            padding: 170px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,6 +78,27 @@
         </div>
     </header>
 
+    <!-- Divisão para a imagem -->
+    <div class="image-container">
+        <img src="../assets/images/landing_image.jpg" alt="Descrição da Imagem">
+        <div class="image-text">
+            <h1>Título do Banner</h1>
+            <p>Texto explicativo do banner.</p>
+        </div>
+        <div class="blue-square">
+            <form>
+                <input type="text" placeholder="Nome Completo">
+                <input type="text" placeholder="Telefone">
+                <input type="email" placeholder="E-mail">
+                <div class="g-recaptcha" data-sitekey="SUA_CHAVE_SITE_RECAPTCHA"></div>
+                <button class="btn">Enviar</button>
+            </form>
+            <form>
+                <textarea placeholder="Mensagem"></textarea>
+            </form>
+        </div>
+    </div>
+    
     <section class="hero">
         <div class="container">
             <h2>Móveis Planejados Para o Seu Lar</h2>
@@ -27,6 +106,7 @@
             <a href="https://www.moveleiros.com.br/" target="_blank" class="btn">Ver Produtos</a>
         </div>
     </section>
+
     <hr>
     <section class="featured-products">
         <div class="container">
@@ -71,9 +151,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Moveleiros - Todos os direitos reservados</p>
-            <a href="https://api.whatsapp.com/send?phone=551140404990&text=Ol%C3%A1!" target="_blank">WhatsApp</a> | <a href="https://www.moveleiros.com.br/" target="_blank">Site Oficial</a>
+            <p>Direitos autorais &copy; 2024 Moveleiros</p>
+            <!-- <a href="https://api.whatsapp.com/send?phone=551140404990&text=Ol%C3%A1!" target="_blank">WhatsApp</a> | <a href="https://www.moveleiros.com.br/" target="_blank">Site Oficial</a> -->
         </div>
-    </footer>
+    </footer
+
+    <!-- Ícone Flutuante do WhatsApp -->
+    <a class="whatsapp-icon" href="https://api.whatsapp.com/send?phone=551140404990&text=Ol%C3%A1!" target="_blank">
+        <img src="../assets/images/wpp.jpg" alt="WhatsApp">
+    </a>
 </body>
 </html>
