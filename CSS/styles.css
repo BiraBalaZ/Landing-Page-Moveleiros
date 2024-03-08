@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    position: relative; /* Necessário para definir um contexto de empilhamento */
+    position: relative;
     color: #000;
 }
 
@@ -28,6 +30,7 @@ header {
 }
 
 header h1 {
+    font-family: "Qwitcher Grypen", cursive;
     font-size: 32px;
 }
 
@@ -91,7 +94,6 @@ footer a {
     text-decoration: none;
 }
 
-/* Background Image Blur Effect */
 body::before {
     content: '';
     position: absolute;
@@ -102,8 +104,8 @@ body::before {
     background-image: url('../assets/images/Moveleiros\ timbrado.png');
     background-size: cover;
     background-repeat: no-repeat;
-    filter: blur(5px); /* Efeito de blur apenas na imagem de fundo */
-    z-index: -1; /* Coloca o pseudo-elemento atrás de todo o conteúdo */
+    filter: blur(5px);
+    z-index: -1;
 }
 
 .product-item {
@@ -120,14 +122,13 @@ body::before {
 .item img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease, transition-delay 0.3s; /* Adiciona transição de suavização ao tamanho com atraso */
+    transition: transform 0.3s ease, transition-delay 0.3s;
 }
 
 .item h3 {
     margin-top: 10px;
 }
 
-/* Ícone Flutuante do WhatsApp */
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
@@ -139,49 +140,93 @@ body::before {
     width: 50px;
     height: auto;
     border-radius: 50%;
-    transition: box-shadow 0.3s ease; /* Adiciona transição suave para a sombra */
+    transition: box-shadow 0.3s ease;
 }
 
 .whatsapp-icon:hover img {
-    box-shadow: 0 0 20px #00f; /* Adiciona sombra azul ao redor do ícone */
+    box-shadow: 0 0 20px #00f;
 }
 
-/* Efeito de aumento suave nas imagens dos itens */
 .item img:hover {
-    transform: scale(1.5); /* Aumenta o tamanho em 10% */
-    transition-delay: 0.1s; /* Adiciona atraso de 0.3s para a transição */
+    transform: scale(1.5);
+    transition-delay: 0.1s;
 }
 
-/* Divisão para a imagem */
 .image-container {
     position: relative;
     width: 100%;
-    height: 665px; /* Altura da imagem */
+    height: 665px;
     overflow: hidden;
     display: flex;
 }
 
 .image-container img {
-    width: 50%; /* Metade da largura da tela */
-    height: 100%; /* Mesma altura da imagem */
+    width: 50%;
+    height: 100%;
     object-fit: cover;
     filter: blur(3px);
-    z-index: 1; /* Garante que a imagem esteja sobreposta ao quadrado */
-    transition: filter 0.05s ease, transform 0.5s ease; /* Adiciona transições suaves */
+    z-index: 1;
+    transition: filter 0.05s ease, transform 0.5s ease;
 }
 
-/* Quadrado azul escuro */
 .blue-square {
-    width: 50%; /* Metade da largura da tela */
-    height: 665px; /* Mesma altura da imagem */
-    background-color: #214e73; /* Cor azul escuro */
-    z-index: 0; /* Coloca o quadrado atrás da imagem */
+    width: 50%;
+    height: 665px;
+    background-color: #214e73;
+    z-index: 0;
+    padding-top: 80px; /* Ajuste a quantidade de espaço acima do formulário conforme necessário */
 }
 
-/* Remover embaçamento e aumentar tamanho da imagem quando o mouse estiver sobre ela */
-/* .image-container:hover img {
-    filter: none;
-    transform: scale(1.2);
-} */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px; /* Adicione uma margem acima do formulário */
+}
 
-/* CSS posterior permanece inalterado */
+input,
+textarea {
+    font-size: 125%;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.image-text {
+    font-size: 125%;
+    position: absolute;
+    text-align: center;
+    color: #275166;
+    z-index: 1;
+    width: 900px;
+    padding: 280px;
+}
+
+.image-text h1{
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 120px;
+    text-align: center;
+}
+
+.g-recaptcha {
+    padding: 20px;
+}
+
+.titlesquare {
+    color: #ffffff;
+    font-size: 35px;
+    padding: 15px;
+    font-family: "Nanum Myeongjo", serif;
+}
