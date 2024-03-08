@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -156,7 +156,7 @@ body::before {
 .image-container {
     position: relative;
     width: 100%;
-    height: 400px; /* Altura da imagem */
+    height: 665px; /* Altura da imagem */
     overflow: hidden;
     display: flex;
 }
@@ -165,7 +165,7 @@ body::before {
     width: 50%; /* Metade da largura da tela */
     height: 100%; /* Mesma altura da imagem */
     object-fit: cover;
-    filter: blur(2.2px);
+    filter: blur(3px);
     z-index: 1; /* Garante que a imagem esteja sobreposta ao quadrado */
     transition: filter 0.05s ease, transform 0.5s ease; /* Adiciona transições suaves */
 }
@@ -173,7 +173,7 @@ body::before {
 /* Quadrado azul escuro */
 .blue-square {
     width: 50%; /* Metade da largura da tela */
-    height: 400px; /* Mesma altura da imagem */
+    height: 665px; /* Mesma altura da imagem */
     background-color: #214e73; /* Cor azul escuro */
     z-index: 0; /* Coloca o quadrado atrás da imagem */
 }
