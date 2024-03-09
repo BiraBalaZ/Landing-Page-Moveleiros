@@ -19,8 +19,13 @@ body {
     padding: 0 20px;
 }
 
+.moveleiros {
+    pointer-events: none;
+}
+
 .teste {
     text-align: center;
+    color: #275166;
 }
 
 header {
@@ -127,6 +132,11 @@ body::before {
 
 .item h3 {
     margin-top: 10px;
+    color: #275166;
+}
+
+.item p {
+    color: #275166;
 }
 
 .whatsapp-icon {
@@ -229,4 +239,27 @@ button {
     font-size: 35px;
     padding: 15px;
     font-family: "Nanum Myeongjo", serif;
+}
+
+.passos-text {
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 120px;
+    color: #275166;
+    text-align: center;
+}
+
+.passos-items {
+    display: flex;
+    justify-content: center; /* Centralizar os itens na página */
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 0 20px; /* Adicionar um preenchimento horizontal */
+    box-sizing: border-box;
+}
+
+.passos {
+    border-color: #275166;
+    border-style: solid;
+    display: flex;
+    margin: 0;
+    border-radius: 1.5%; 
 }
