@@ -168,6 +168,8 @@ body::before {
     height: 665px;
     overflow: hidden;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-container img {
@@ -177,6 +179,29 @@ body::before {
     filter: blur(3px);
     z-index: 1;
     transition: filter 0.05s ease, transform 0.5s ease;
+}
+
+.image-text {
+    font-size: 125%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: #275166;
+    z-index: 2;
+    text-align: center;
+    transform: translateY(-50%); /* Centralizar verticalmente */
+    width: 50%;
+}
+
+.image-text h1{
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 120px;
+    text-align: center;
+}
+
+.image-text p {
+    font-size: 20px;
+    text-align: center;
 }
 
 .blue-square {
@@ -212,22 +237,6 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 20px;
-}
-
-.image-text {
-    font-size: 125%;
-    position: absolute;
-    text-align: center;
-    color: #275166;
-    z-index: 1;
-    width: 900px;
-    padding: 280px;
-}
-
-.image-text h1{
-    font-family: "Qwitcher Grypen", cursive;
-    font-size: 120px;
-    text-align: center;
 }
 
 .g-recaptcha {
