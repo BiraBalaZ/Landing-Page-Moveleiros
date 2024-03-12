@@ -1,131 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Moveleiros - Landing Page</title>
-        <link rel="stylesheet" href="../CSS/styles.css">
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1><a href="#" target="_self"><img classe="moveleiros" src="../assets/images/logo_moveleiros.png " alt="Moveleiros"></a></h1>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.moveleiros.com.br/">Produtos</a></li>
-                        <li><a href="https://www.moveleiros.com.br/contactus">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Divisão para a imagem -->
-        <div class="image-container">
-            <div class="image-text">
-                <h1>Moveleiros</h1>
-                <p>Móveis planejados, antes para poucos, agora para todos!</p>
-            </div>
-            <img src="../assets/images/landing_image2.jpg" alt="Descrição da Imagem" draggable="false">
-            <div class="blue-square">
-                <!-- <br><br><br> -->
-                <h2 class="titlesquare">Solicite seu orçamento</h2>
-                <form>
-                    <input type="text" placeholder="Nome Completo*">
-                    <input type="text" placeholder="Telefone*">
-                    <input type="email" placeholder="E-mail*">
-                    <textarea placeholder="O que você deseja planejar?"></textarea>
-                    <div class="g-recaptcha" data-sitekey="SUA_CHAVE_SITE_RECAPTCHA"></div>
-                    <button class="btn">Enviar</button>
-                </form>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moveleiros</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="container">
+            <h1><a href="#" target="_self"><img classe="moveleiros" src="../assets/images/moveleiros_logo_white.png " alt="Moveleiros"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.moveleiros.com.br/">Produtos</a></li>
+                    <li><a href="https://www.moveleiros.com.br/contactus">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <section class="hero">
-            <div class="container">
-                <h2>Móveis Planejados Para o Seu Lar</h2>
-                <p>Transforme sua casa com nossos móveis planejados exclusivamente para você!</p>
-                <a href="https://www.moveleiros.com.br/" target="_blank" class="btn">Ver Produtos</a>
-            </div>
-        </section>
+    </header>
 
-        <hr color="#0e4558">
+    <!-- Parte 1.1 do site -->
+    <!-- Divisão para a imagem -->
+    <div class="image-container">
+        <div class="image-text">
+            <h1>Moveleiros</h1>
+            <p>Móveis planejados, antes para poucos, agora para todos!</p>
+        </div>
+        <img src="../assets/images/landing_kitchen_split.jpg" alt="Uma linda cozinha planejada para o seu lar" draggable="false">
+        <!-- Parte 1.2 do site -->
+        <!-- Divisão para o quadrado azul -->
+        <div class="blue-square">
+            <h2 class="titlesquare">Solicite seu orçamento</h2>
+            <form>
+                <input type="text" placeholder="Nome Completo*">
+                <input type="text" placeholder="Telefone*">
+                <input type="email" placeholder="E-mail*">
+                <textarea placeholder="O que você deseja planejar?"></textarea>
+                <div class="g-recaptcha" data-sitekey="SUA_CHAVE_SITE_RECAPTCHA"></div>
+                <button class="btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <h2>Móveis Planejados Para o Seu Lar</h2>
+            <p>Transforme sua casa com nossos móveis planejados exclusivamente para você!</p>
+            <a href="https://www.moveleiros.com.br/" target="_blank" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+    <hr color="#0e4558">
 
-        <section class="featured-products">
-            <div class="container">
-                <h2 class="teste">Produtos em Destaque</h2>
-                <br><br>
-                <div class="product-item">
-                    <!-- Item 1 -->
-                    <div class="item">
-                        <a href="https://www.moveleiros.com.br/quarto-sob-medida-6m" target="_blank">
-                            <img src="../assets/images/quarto.jpeg" alt="Item 1" draggable="false">
-                        </a>
-                        <h3>Quarto sob medida</h3>
-                        <p>Tamanho Ambiente: 6m²</p>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="item">
-                        <a href="https://www.moveleiros.com.br/dormit%C3%B3rio-sob-medida-7m" target="_blank">
-                            <img src="../assets/images/dorm.jpeg" alt="Item 2" draggable="false">
-                        </a>
-                        <h3>Dormitório sob medida</h3>
-                        <p>Tamanho Ambiente: 7m²</p>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="item">
-                        <a href="https://www.moveleiros.com.br/cozinha-planejada-pequena-3m" target="_blank">
-                            <img src="../assets/images/cozinha.jpeg" alt="Item 3" draggable="false">
-                        </a>
-                        <h3>Cozinha sob medida</h3>
-                        <p>Tamanho Ambiente: 3m²</p>
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="item">
-                        <a href="https://www.moveleiros.com.br/studio-32m-planejado" target="_blank">
-                            <img src="../assets/images/studio.jpeg" alt="Item 4" draggable="false">
-                        </a>
-                        <h3>Studio Planejado</h3>
-                        <p>Tamanho Ambiente: 32m²</p>
-                    </div>
+    <!-- Parte 2 do site -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="teste">Produtos em Destaque</h2>
+            <br><br>
+            <div class="product-item">
+
+                <!-- Produto 1 -->
+                <div class="item">
+                    <a href="https://www.moveleiros.com.br/quarto-sob-medida-6m" target="_blank">
+                        <img src="../assets/images/quarto.jpeg" alt="Item 1" draggable="false">
+                    </a>
+                    <h3>Quarto sob medida</h3>
+                    <p>Tamanho Ambiente: 6m²</p>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="item">
+                    <a href="https://www.moveleiros.com.br/dormit%C3%B3rio-sob-medida-7m" target="_blank">
+                        <img src="../assets/images/dorm.jpeg" alt="Item 2" draggable="false">
+                    </a>
+                    <h3>Dormitório sob medida</h3>
+                    <p>Tamanho Ambiente: 7m²</p>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="item">
+                    <a href="https://www.moveleiros.com.br/cozinha-planejada-pequena-3m" target="_blank">
+                        <img src="../assets/images/cozinha.jpeg" alt="Item 3" draggable="false">
+                    </a>
+                    <h3>Cozinha sob medida</h3>
+                    <p>Tamanho Ambiente: 3m²</p>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="item">
+                    <a href="https://www.moveleiros.com.br/studio-32m-planejado" target="_blank">
+                        <img src="../assets/images/studio.jpeg" alt="Item 4" draggable="false">
+                    </a>
+                    <h3>Studio Planejado</h3>
+                    <p>Tamanho Ambiente: 32m²</p>
                 </div>
             </div>
-            <hr color="#0e4558">
-        </section>
-
-        <h2 class="passos-text">Seu lar pronto em 5 passos</h2>
-        <br>
-        <div class="passos-items">
-            <div class="passos">
-                <img src="../assets/images/template2.png" draggable="false">
-            </div>
-
-            <div class="passos">
-                <img src="../assets/images/template2.png" draggable="false">
-            </div>
-
-            <div class="passos">
-                <img src="../assets/images/template2.png" draggable="false">
-            </div>
-
-            <div class="passos">
-                <img src="../assets/images/template2.png" draggable="false">
-            </div>
-            
-            <div class="passos">
-                <img src="../assets/images/template2.png" draggable="false">
-            </div>
         </div>
-        <br>
-        <footer>
-            <div class="container">
-                <p>Direitos autorais &copy; 2024 Moveleiros</p>
-            </div>
-        </footer
+        <br><br><br><br>
+        <hr color="#0e4558">
+    </section>
 
-        <!-- Ícone Flutuante do WhatsApp -->
-        <a class="whatsapp-icon" href="https://api.whatsapp.com/send?phone=551140404990&text=Ol%C3%A1!" target="_blank">
-            <img src="../assets/images/wpp.jpg" alt="WhatsApp" draggable="false">
-        </a>
-    </body>
+    <!-- Parte 3 do site -->
+    <h2 class="passos-text">Seu lar pronto em 5 passos</h2>
+    <br><br><br>
+    <div class="passos-items">
+        <div class="passos">
+            <img src="../assets/images/template2.png" draggable="false">
+        </div>
+        <div class="passos">
+            <img src="../assets/images/template2.png" draggable="false">
+        </div>
+        <div class="passos">
+            <img src="../assets/images/template2.png" draggable="false">
+        </div>
+        <div class="passos">
+            <img src="../assets/images/template2.png" draggable="false">
+        </div>
+        <div class="passos">
+            <img src="../assets/images/template2.png" draggable="false">
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Direitos autorais &copy; 2024 Moveleiros</p>
+        </div>
+    </footer>
+
+    <!-- Ícone Flutuante do WhatsApp -->
+    <a class="whatsapp-icon" href="https://api.whatsapp.com/send?phone=551140404990&text=Ol%C3%A1!" target="_blank">
+        <img src="../assets/images/wpp.jpg" alt="WhatsApp" draggable="false">
+    </a>
+</body>
 </html>
